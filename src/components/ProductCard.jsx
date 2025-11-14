@@ -19,7 +19,7 @@ const ProductCard = ({ product, onAddToOrder }) => {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
       {/* Image */}
-      <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden group">
+      <div className="relative h-64 sm:h-72 md:h-64 overflow-hidden group">
         <img
           src={product.image}
           alt={product.name}
