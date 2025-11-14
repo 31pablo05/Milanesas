@@ -107,15 +107,16 @@ const Hero = () => {
               </button>
 
               {/* Dots Indicator */}
-              <div className="absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 flex gap-1 md:gap-1.5 z-10">
+              <div className="absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 flex gap-0.5 md:gap-1 z-10">
                 {images.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentSlide(index)}
-                    className={`h-1.5 md:h-2 rounded-full transition-all ${
-                      index === currentSlide ? 'bg-white w-4 md:w-6 lg:w-8' : 'bg-white/50 w-1.5 md:w-2'
+                    className={`h-1 md:h-1.5 rounded-full transition-all !min-h-0 !min-w-0 ${
+                      index === currentSlide ? 'bg-white w-3 md:w-5 lg:w-6' : 'bg-white/50 w-1 md:w-1.5'
                     }`}
                     aria-label={`Ir a imagen ${index + 1}`}
+                    style={{ minHeight: 'unset', minWidth: 'unset' }}
                   />
                 ))}
               </div>
