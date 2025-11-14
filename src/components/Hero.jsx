@@ -107,13 +107,13 @@ const Hero = () => {
               </button>
 
               {/* Dots Indicator */}
-              <div className="absolute bottom-3 md:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 md:gap-2 z-10">
+              <div className="absolute bottom-2 md:bottom-4 left-1/2 -translate-x-1/2 flex gap-1 md:gap-1.5 z-10">
                 {images.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentSlide(index)}
-                    className={`h-2 rounded-full transition-all ${
-                      index === currentSlide ? 'bg-white w-6 md:w-8' : 'bg-white/50 w-2'
+                    className={`h-1.5 md:h-2 rounded-full transition-all ${
+                      index === currentSlide ? 'bg-white w-4 md:w-6 lg:w-8' : 'bg-white/50 w-1.5 md:w-2'
                     }`}
                     aria-label={`Ir a imagen ${index + 1}`}
                   />
@@ -121,9 +121,9 @@ const Hero = () => {
               </div>
             </div>
             {/* Floating Badge */}
-            <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-gradient-to-br from-red-soft to-red-accent text-white px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl border-4 border-white">
-              <p className="font-poppins font-bold text-base md:text-lg">✨ 100% Caseras</p>
-              <p className="font-inter text-xs md:text-sm">Con separadores individuales</p>
+            <div className="absolute -bottom-3 -left-3 md:-bottom-6 md:-left-6 bg-gradient-to-br from-red-soft to-red-accent text-white px-3 py-2 md:px-6 md:py-4 rounded-lg md:rounded-xl shadow-2xl border-2 md:border-4 border-white">
+              <p className="font-poppins font-bold text-sm md:text-lg">✨ 100% Caseras</p>
+              <p className="font-inter text-xs md:text-sm">Con separadores</p>
             </div>
           </div>
         </div>

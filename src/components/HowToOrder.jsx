@@ -62,21 +62,21 @@ const HowToOrder = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Card */}
-                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full border-2 border-transparent hover:border-golden/20">
+                <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full border-2 border-transparent hover:border-golden/20">
                   {/* Number Badge */}
-                  <div className={`absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform`}>
-                    <span className="text-white font-poppins font-bold text-xl">
+                  <div className={`absolute -top-3 -left-3 md:-top-4 md:-left-4 w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform`}>
+                    <span className="text-white font-poppins font-bold text-lg md:text-xl">
                       {step.number}
                     </span>
                   </div>
 
                   {/* Icon */}
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center shadow-md`}>
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className={`w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 rounded-lg md:rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center shadow-md`}>
+                    <Icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-poppins font-bold text-brown-warm mb-3 text-center">
+                  <h3 className="text-lg md:text-xl font-poppins font-bold text-brown-warm mb-2 md:mb-3 text-center">
                     {step.title}
                   </h3>
                   <p className="text-sm md:text-base text-brown-light/70 font-inter text-center leading-relaxed">
@@ -98,16 +98,16 @@ const HowToOrder = () => {
 
         {/* CTA Bottom */}
         <div className="text-center mt-10 md:mt-12 animate-fadeIn" style={{ animationDelay: '0.4s' }}>
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-gradient-to-r from-golden/10 to-green-natural/10 p-6 rounded-2xl border-2 border-golden/20">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-green-natural flex items-center justify-center animate-pulse">
-                <MessageCircle className="w-6 h-6 text-white" />
+          <div className="inline-flex flex-col sm:flex-row items-center gap-3 md:gap-4 bg-gradient-to-r from-golden/10 to-green-natural/10 p-4 md:p-6 rounded-xl md:rounded-2xl border-2 border-golden/20">
+            <div className="flex items-center gap-2 md:gap-3">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-green-natural flex items-center justify-center animate-pulse">
+                <MessageCircle className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
               <div className="text-left">
-                <p className="font-poppins font-bold text-brown-warm">
+                <p className="font-poppins font-bold text-brown-warm text-sm md:text-base">
                   ¿Tenés dudas?
                 </p>
-                <p className="text-sm text-brown-light/70 font-inter">
+                <p className="text-xs md:text-sm text-brown-light/70 font-inter">
                   Escribinos por WhatsApp
                 </p>
               </div>
@@ -116,7 +116,7 @@ const HowToOrder = () => {
               href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=${encodeURIComponent('Hola! Necesito ayuda para hacer un pedido')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-natural hover:bg-green-600 text-white font-poppins font-semibold px-6 py-3 rounded-lg transition-all transform hover:scale-105 active:scale-95 shadow-lg text-sm md:text-base"
+              className="bg-green-natural hover:bg-green-600 text-white font-poppins font-semibold px-5 py-2.5 md:px-6 md:py-3 rounded-lg transition-all transform hover:scale-105 active:scale-95 shadow-lg text-sm md:text-base"
             >
               Contactar Ahora
             </a>
