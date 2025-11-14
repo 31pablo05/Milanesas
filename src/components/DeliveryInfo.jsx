@@ -73,11 +73,7 @@ const DeliveryInfo = () => {
                 </div>
               </div>
 
-              <div className="bg-red-soft/10 border border-red-soft/20 rounded-lg p-3 mt-4">
-                <p className="text-sm text-brown-warm font-inter">
-                  <span className="font-semibold">Pedido mínimo:</span> ${BUSINESS_INFO.envio.minimo.toLocaleString('es-AR')}
-                </p>
-              </div>
+              
             </div>
           </div>
 
