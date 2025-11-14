@@ -7,11 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'golden': '#F9C74F',
-        'beige-light': '#FFF8E7',
-        'red-soft': '#E63946',
-        'brown-light': '#8D6E63',
-        'green-natural': '#4CAF50',
+        'golden': '#D4AF37',
+        'golden-light': '#F5E6D3',
+        'beige-light': '#FFF8E1',
+        'red-soft': '#DC3545',
+        'red-accent': '#C92A2A',
+        'brown-warm': '#8B4513',
+        'brown-light': '#A0826D',
+        'green-natural': '#25D366',
+        'cream': '#FFF8E1',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

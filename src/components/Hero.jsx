@@ -33,26 +33,31 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative bg-gradient-to-br from-beige-light to-white pt-20 pb-12 md:pt-32 md:pb-24">
+    <section id="inicio" className="relative bg-gradient-to-br from-cream via-beige-light to-white pt-20 pb-12 md:pt-32 md:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-4 md:space-y-6 text-center md:text-left order-2 md:order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-brown-light leading-tight">
-              ¡Pedí tus{' '}
-              <span className="text-red-soft">milas caseras</span>{' '}
-              para tener siempre algo rico en el freezer!
+            <div className="inline-block bg-golden/10 px-4 py-2 rounded-full mb-2">
+              <span className="text-golden font-poppins font-semibold text-sm">
+                🔥 Más de 500 familias confían en nosotros
+              </span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-brown-warm leading-tight">
+              Del{' '}
+              <span className="text-red-soft">freezer al horno</span>{' '}
+              en minutos
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-brown-light/80 font-inter">
-              Milanesas caseras crudas de la mejor calidad, listas para freezar y cocinar cuando quieras. 
-              100% artesanales, con el sabor de siempre.
+            <p className="text-base sm:text-lg md:text-xl text-brown-light/90 font-inter">
+              Milanesas caseras crudas en Trelew, Chubut. Con separadores individuales, 
+              listas para freezar y cocinar cuando quieras. 100% artesanales.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
               <button
                 onClick={scrollToProducts}
-                className="bg-golden hover:bg-golden/90 text-white font-poppins font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 transition-all transform hover:scale-105"
+                className="bg-gradient-to-r from-golden to-golden/90 hover:from-golden/90 hover:to-golden text-white font-poppins font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all transform hover:scale-105"
               >
-                Hacer Pedido
+                Ver Precios y Pedir
                 <ArrowRight className="w-5 h-5" />
               </button>
               <button
@@ -60,7 +65,7 @@ const Hero = () => {
                   const element = document.getElementById('contacto');
                   if (element) element.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="border-2 border-golden text-golden hover:bg-golden hover:text-white font-poppins font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all"
+                className="border-2 border-golden text-golden hover:bg-golden hover:text-white font-poppins font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl transition-all"
               >
                 Contactanos
               </button>
@@ -116,9 +121,9 @@ const Hero = () => {
               </div>
             </div>
             {/* Floating Badge */}
-            <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-red-soft text-white px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-xl">
-              <p className="font-poppins font-bold text-base md:text-lg">100% Caseras</p>
-              <p className="font-inter text-xs md:text-sm">Calidad garantizada</p>
+            <div className="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-gradient-to-br from-red-soft to-red-accent text-white px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl border-4 border-white">
+              <p className="font-poppins font-bold text-base md:text-lg">✨ 100% Caseras</p>
+              <p className="font-inter text-xs md:text-sm">Con separadores individuales</p>
             </div>
           </div>
         </div>
