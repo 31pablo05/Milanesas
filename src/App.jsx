@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import HowToOrder from './components/HowToOrder';
 import ProductCard from './components/ProductCard';
 import OrderSummary from './components/OrderSummary';
+import ProductInfo from './components/ProductInfo';
 import DeliveryInfo from './components/DeliveryInfo';
 import Footer from './components/Footer';
 import FloatingWhatsAppButton from './components/FloatingWhatsAppButton';
@@ -153,7 +154,6 @@ function App() {
       <Navbar cartItemCount={orderItems.length} onCartClick={handleOpenCart} />
       <Hero />
       <HowToOrder />
-      <DeliveryInfo />
 
       {/* Products Section */}
       <section id="productos" className="py-12 md:py-16 bg-gradient-to-b from-white to-cream">
@@ -200,6 +200,8 @@ function App() {
         </div>
       </section>
 
+      <ProductInfo />
+      <DeliveryInfo />
       <Footer />
 
       {/* Floating WhatsApp Button */}

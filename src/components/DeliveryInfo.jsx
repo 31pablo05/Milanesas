@@ -143,58 +143,6 @@ const DeliveryInfo = () => {
             </div>
           </div>
         </div>
-
-        {/* Características del producto */}
-        <div className="bg-gradient-to-r from-brown-warm/5 to-golden/5 rounded-2xl p-6 md:p-8 border-2 border-brown-warm/10 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-          <div className="flex items-center gap-3 mb-6">
-            <Package className="w-8 h-8 text-brown-warm" />
-            <h3 className="text-xl md:text-2xl font-poppins font-bold text-brown-warm">
-              Información del Producto
-            </h3>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <div className="text-3xl mb-2">❄️</div>
-              <p className="font-poppins font-semibold text-brown-warm mb-1">
-                Duración
-              </p>
-              <p className="text-sm text-brown-light/70">
-                {BUSINESS_INFO.producto.duracionFreezer} en el freezer
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <div className="text-3xl mb-2">📏</div>
-              <p className="font-poppins font-semibold text-brown-warm mb-1">
-                Separadores
-              </p>
-              <p className="text-sm text-brown-light/70">
-                Individuales para fácil uso
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <div className="text-3xl mb-2">⏱️</div>
-              <p className="font-poppins font-semibold text-brown-warm mb-1">
-                Preparación
-              </p>
-              <p className="text-sm text-brown-light/70">
-                {BUSINESS_INFO.producto.preparacion}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <div className="text-3xl mb-2">📦</div>
-              <p className="font-poppins font-semibold text-brown-warm mb-1">
-                Empaque
-              </p>
-              <p className="text-sm text-brown-light/70">
-                Sellado al vacío
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
